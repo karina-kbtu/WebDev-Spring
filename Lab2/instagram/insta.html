@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Общие стили */
+        html, body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Центрирование */
+        }
+
+        /* Контейнер для центрирования */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px; /* Отступ между элементами */
+        }
+
+        /* Левая часть (телефон) */
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone-container {
+            position: relative;
+        }
+
+        .ig-phone {
+            width: 380px;
+        }
+
+        .screenshot {
+            position: absolute;
+            top: 20px;
+            left: 123px;
+            width: 207px;
+            border-radius: 10px;
+        }
+
+        /* Правая часть (форма входа) */
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-box {
+            background-color: #ffffff;
+            width: 350px;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .instagram-logo {
+            width: 175px;
+            margin: 20px auto;
+        }
+
+        /* Поля ввода */
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+        }
+
+        input {
+            width: 85%;
+            padding: 10px;
+            margin: 5px auto;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #0095f6;
+            color: white;
+            width: 85%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8e8e8e;
+            font-size: 12px;
+            margin: 15px 0;
+        }
+
+        h3::before, h3::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #dbdbdb;
+            margin: 0 10px;
+        }
+
+        /* Facebook вход */
+        .facebook-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #385185;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .facebook-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .forgot {
+            color: #00376B;
+            font-size: 12px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        /* Блок регистрации */
+        .sign-up-box {
+            background-color: #ffffff;
+            width: 350px;
+            text-align: center;
+            border: 1px solid #dbdbdb;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .sign-up {
+            color: #0095f6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Секция загрузки приложения */
+        .app-install {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .app-install img {
+            width: 130px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        /* Подвал */
+        #footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-link {
+            color: #8e8e8e;
+            font-size: 12px;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-details {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        p {
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Левая часть: телефон -->
+        <div class="left">
+            <div class="phone-container">
+                <img src="https://static.cdninstagram.com/rsrc.php/v3/y4/r/ItTndlZM2n2.png" class="ig-phone" />
+                <img src="screenshot1.png" class="screenshot" />
+            </div>
+        </div>
+
+        <!-- Правая часть: окно входа -->
+        <div class="right">
+            <div class="login-box">
+                <img src="https://logos-download.com/wp-content/uploads/2016/03/Instagram_Logo_2016.png" class="instagram-logo" />
+                
+                <div class="input-container">
+                    <input type="text" placeholder="Phone number, username, or email" />
+                    <input type="password" placeholder="Password" />
+                </div>
+
+                <button>Log in</button>
+
+                <h3>OR</h3>
+
+                <a href="#" class="facebook-login">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="facebook-icon" />
+                    Log in with Facebook
+                </a>
+
+                <br>
+                <a class="forgot" href="#">Forgot password?</a>
+            </div>
+
+            <div class="sign-up-box">
+                <p>Don't have an account? <a class="sign-up" href="#">Sign up</a></p>
+            </div>
+
+            <div class="app-install">
+                <p>Get the app.</p>
+                <a href="#"><img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" /></a>
+                <a href="#"><img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div>
+          <a class="footer-link">Meta</a>
+          <a class="footer-link">About</a>
+          <a class="footer-link">Blog</a>
+          <a class="footer-link">Jobs</a>
+          <a class="footer-link">Help</a>
+          <a class="footer-link">API</a>
+          <a class="footer-link">Privacy</a>
+          <a class="footer-link">Terms</a>
+          <a class="footer-link">Top Accounts</a>
+          <a class="footer-link">Locations</a>
+          <a class="footer-link">Instagram Lite</a>
+          <a class="footer-link">Contact Uploading & Non-Users</a>
+          <a class="footer-link">Digital Collectibles Privacy Notice</a>
+        </div>
+        <div class="footer-details">
+        <div>
+          <p>English (UK)</p>
+        </div>
+        
+        <div>
+            <p>© 2025 Instagram from Meta</p>
+        </div>
+    </div>
+
+</body>
+</html>
