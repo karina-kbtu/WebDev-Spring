@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Facebook Login Page</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.res {
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    padding: 0 15px;
+    min-height: 70vh;
+    justify-content: center;
+    background: #f0f2f5;
+}
+
+.fb-form {
+    justify-content: space-between;
+    max-width: 900px; /* Изменено на 900px для более точной ширины */
+    width: 100%;
+}
+
+.fb-form .card {
+    margin-bottom: 90px;
+}
+
+.fb-form h1 {
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.fb-form p {
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px; /* Увеличен отступ для создания нужной высоты */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Установлена ширина формы */
+    width: 100%;
+}
+
+form input {
+    height: 55px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+::placeholder {
+    color: #777;
+    font-size: 1.633 rem;
+}
+
+.fb-submit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.fb-submit .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.fb-submit .login:hover {
+    background: #0d65d9;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.fb-submit .forgot {
+    color: #1877f2;
+    font-size: 0.875rem;
+}
+
+.fb-submit .forgot:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button a {
+    padding: 15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.button a:hover {
+    background: #3ba626;
+}
+.create-page {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #606770;
+        }
+
+        .create-page a {
+            color: #1c1e21;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .create-page a:hover {
+            text-decoration: underline;
+        }
+
+.footer-langs {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 8px 0;
+
+    margin-left: 3vh;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+footer ol li {
+    padding-right: 20px;
+    font-size: 12px;
+    color: #8a8d91;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 12px;
+    color: #8a8d91;
+    margin-left: 3vh;
+}
+
+@media (max-width: 900px) {
+    .fb-form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fb-form .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .fb-form h1 {
+        font-size: 3.5rem;
+    }
+
+    .fb-form p {
+        font-size: 1.3rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+</style>
+<body>
+    <div class="row res">
+        <div class="fb-form res">
+            <div class="card">
+                <h1>facebook</h1>
+                <p>Connect with friends and the world </p>
+                <p>around you on Facebook.</p>
+            </div>
+            <div> <!-- 📌 Добавляем дополнительный контейнер -->
+                <form action="#">
+                    <input type="email" placeholder="Email or phone number" required>
+                    <input type="password" placeholder="Password" required>
+                    <div class="fb-submit">
+                        <button type="submit" class="login">Login</button>
+                        <a href="#" class="forgot">Forgot password?</a>
+                    </div>
+                    <hr>
+                    <div class="button">
+                        <a href="#">Create new account</a>
+                    </div>
+                </form>
+                <div class="create-page" style="margin-top: 20px;"> <!-- 📌 Теперь внутри правильного контейнера -->
+                    <a href="#">Create a Page</a> for a celebrity, brand or business.
+                </div>
+            </div> <!-- 📌 Закрываем новый контейнер -->
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-langs">
+            <ol>
+                <li>English (UK)</li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Қазақша</a></li>
+                <li><a href="#">Türkçe</a></li>
+                <li><a href="#">Bahasa Indonesia</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">한국어</a></li>
+                <li><a href="#">Shqip</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><button>+</button></li>
+            </ol>
+            <ol>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Meta Pay</a></li>
+                <li><a href="#">Meta Store</a></li>
+                <li><a href="#">Meta Quest</a></li>
+                <li><a href="#">Imagine with Meta AI</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Threads</a></li>
+                <li><a href="#">Fundraisers</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Voting Information Centre</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Privacy Centre</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Create ad</a></li>
+                <li><a href="#">Create Page</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">AdChoices</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact uploading and non-users</a></li>
+            </ol>
+            <small>Meta © 2025</small>
+        </div>
+    </footer>
+</body>
+</html>
+
