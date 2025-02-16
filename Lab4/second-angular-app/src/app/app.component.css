@@ -1,0 +1,24 @@
+/* Put these src/app/app.component.css */
+.brand-name {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .brand-logo {
+    width: 150px; /* Увеличенный размер */
+    height: auto;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  
