@@ -1,0 +1,68 @@
+.listing {
+    width: 250px; /* Фиксированная ширина для всех карточек */
+    height: 400px; /* Фиксированная высота */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .listing-photo {
+    width: 100%;
+    height: 180px; /* Фиксированная высота для всех изображений */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .listing-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .listing-data {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .details-link {
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .details-link:hover {
+    text-decoration: underline;
+  }
+  
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .share-buttons button {
+    background-color: #25d366; 
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  
+  .share-buttons button:last-child {
+    background-color: #0088cc; 
+  }
+  
+  .share-buttons button:hover {
+    opacity: 0.8;
+  }
+  
