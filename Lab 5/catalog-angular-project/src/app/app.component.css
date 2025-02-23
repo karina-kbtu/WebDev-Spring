@@ -1,0 +1,44 @@
+main {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+  
+  .brand-name {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+  }
+  
+  .brand-logo {
+    width: 120px;
+  }
+  
+  .content {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .categories button {
+    background: #319b4a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .categories button:hover {
+    background: #0056b3;
+  }
+  
