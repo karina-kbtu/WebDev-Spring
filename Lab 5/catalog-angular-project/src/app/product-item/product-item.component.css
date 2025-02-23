@@ -1,0 +1,95 @@
+.listing {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Одинаковая высота карточек */
+  }
+  
+  .listing:hover {
+    transform: scale(1.03);
+  }
+  
+  .listing-photo {
+    width: 100;
+    height: 180px; /* Фиксированная высота для всех изображений */
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Название товара */
+  .listing-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0;
+    flex-grow: 1; /* Заголовок растягивается, выравнивая высоту */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .listing-data {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .details-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: #007BFF;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  .details-link:hover {
+    background: #0056b3;
+  }
+  
+  .share-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .share-buttons button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .share-buttons button:first-child {
+    background: #25D366;
+    color: white;
+  }
+  
+  .share-buttons button:last-child {
+    background: #0088cc;
+    color: white;
+  }
+  
+  
+  button {
+    background: #6c726c;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #fff9f7;
+  }
+  
