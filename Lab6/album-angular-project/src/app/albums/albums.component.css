@@ -1,0 +1,81 @@
+/* Основной контейнер */
+.albums-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Список альбомов */
+  .albums-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .album-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+  }
+  
+  .album-item:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Ссылка на альбом */
+  .album-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .album-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Кнопка удаления */
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background: #cc0000;
+  }
+  
+  /* Поле ввода нового альбома */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-container input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background: #218838;
+  }
+  
