@@ -1,0 +1,46 @@
+.album-detail-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .album-detail-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .album-info {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .input-title {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-btn, .back-btn, .photos-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .save-btn:hover, .back-btn:hover, .photos-btn:hover {
+    background: #0056b3;
+  }
+  
